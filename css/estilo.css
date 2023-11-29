@@ -1,0 +1,818 @@
+html {
+  font-family: "roboto", "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+a{
+  text-decoration: none;
+}
+
+.nav-padre{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: #3a446e;
+}
+
+.nombre{
+margin: 10px 40px;
+}
+.nombre a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.nav-hijo{
+  margin: 20px;
+}
+.nav-hijo a{
+  text-decoration: none;
+  color: #eeecec;
+  text-align: center;
+  margin: 0px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 30px 10px;
+  transition: .3s;
+}
+
+.nav-hijo a:hover{
+  background-color: #c8c1c1;
+  color: #3a446e;
+}
+
+
+/* index */
+/* section A */
+.sectionA {
+  background-color: #fafafa;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid rgb(63, 63, 61);
+  padding: 0px 20px;
+}
+
+.gridOutfit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.sectionA .pe {
+  color: #000000;
+  padding-top: 30px;
+}
+
+.imagenOutfit {
+  width: 100%;
+}
+
+.gridOutfit p {
+  text-align: center;
+  font-size: 0.7em;
+  color: #616060;
+}
+
+/* section B */
+.sectionB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Img/portada2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.sectionB h2 {
+  color: #fafafa;
+  margin-top: 400px;
+  align-items: end;
+  font-size: 40px;
+  font-weight: bold;
+}
+.sectionB p {
+  color: #000000;
+  background-color: #fafafa;
+  padding: 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sectionB p:hover {
+  background-color: rgb(98, 94, 107);
+}
+.sectionB a {
+  text-decoration: none;
+}
+
+/* section c */
+.sectionC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(228, 244, 215);
+  border-top: 1px rgb(96, 89, 89) solid;
+  height: auto;
+}
+.sectionC h1 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: bold;
+  padding: 0px 30px;
+  font-family: "Roboto", sans-serif;
+}
+.sectionC p {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.formC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.inputC {
+  background-color: #fafafa;
+  width: 400px;
+  margin-top: 20px;
+  padding: 10px 40px;
+  border: 1px solid rgb(150, 145, 145);
+  border-radius: 10px;
+}
+
+.buttonC {
+  color: #fafafa;
+  background-color: #000000;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: none;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.buttonC:hover {
+  background-color: #616060;
+}
+
+/* SECTION D */
+.sectionD {
+  background: #fafafa;
+  padding: 20px 20px;
+}
+
+.gridTop {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gridTop p {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8rem;
+}
+.gridTop a {
+  text-decoration: none;
+}
+
+.sectionD .pe {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.imagenOutfit {
+  transition: 1s;
+  object-fit: cover;
+}
+.imagenOutfit:hover {
+  transform: scale(1.2);
+}
+
+/* SECTION E */
+.sectionE {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Img/portadamujer1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  margin: 0px;
+}
+.sectionE h2 {
+  color: #fafafa;
+  margin-top: 200px;
+  align-items: end;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.sectionE p {
+  color: #000000;
+  background-color: #fafafa;
+  padding: 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: "Roboto", sans-serif;
+}
+.sectionE p:hover {
+  background: #616060;
+}
+.sectionE a {
+  text-decoration: none;
+}
+
+/* inicio nav */
+/* inicio footer */
+.categoriasFooter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: nowrap;
+  background-color: #fafafa;
+  margin: 0px 0px;
+  border-top: 1px #716a6a solid;
+  width: 100%;
+  padding: 0px 40px;
+}
+
+.ayudaFooter {
+  margin: 40px 0px;
+  width: 100%;
+}
+.ayudaFooter h4 {
+  margin-bottom: 30px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.ayudaFooter .numeroFooter {
+  color: rgb(12, 208, 91);
+}
+.ayudaFooter a {
+  text-decoration: none;
+}
+
+.parrafoFooter {
+  color: rgb(47, 49, 49);
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+
+.mediosDePago {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.logoPse {
+  width: 50px;
+}
+
+.tarjetas {
+  width: 200px;
+}
+
+.appStore {
+  width: 100px;
+  margin: 0px 10px 20px 10px;
+}
+
+.contactoWpp {
+  font-weight: bold;
+}
+
+/* footer final */
+.dir {
+  background-color: #000000;
+  color: #fafafa;
+  padding: 10px 0px;
+  text-align: center;
+}
+.dir p {
+  color: #fafafa;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* tienda main*/
+.borderTienda {
+  margin: 20px 50px;
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.productoCasillas {
+  text-align: center;
+}
+
+.productoImagen {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.productoCasillas h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.productoParrafo {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.productoComprar {
+  background-color: rgb(67, 37, 187);
+  color: #fafafa;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+.productoComprar:hover {
+  background-color: rgb(120, 120, 218);
+}
+
+.nav-link .active {
+  color: #fafafa;
+}
+
+.nav-link {
+  color: #000000;
+  font-family: "roboto", "Montserrat", sans-serif;
+}
+
+.ilass {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.resalte:hover {
+  border-bottom: 2px black solid;
+  background-color: rgb(235, 245, 235);
+}
+
+/* Estilos generales para el formulario */
+.formulario-margenes {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  margin: 0;
+}
+
+.formulario-contacto {
+  max-width: auto;
+  padding: 30px;
+  background-color: #3a446e;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.formulario-contacto h2 {
+  color: #f9f9f9;
+  text-align: center;
+  font-weight: bold;
+}
+.formulario-contacto p {
+  color: black;
+  font-size: 1rem;
+  margin: 30px 0px;
+}
+.formulario-contacto label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f0e6e6;
+}
+.formulario-contacto input[type=text], .formulario-contacto input[type=email], .formulario-contacto input[type=tel] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #007bff;
+  background-color: transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #007bff;
+  background-color: transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+.formulario-contacto input[type=text]:focus, .formulario-contacto input[type=email]:focus, .formulario-contacto input[type=tel]:focus {
+  outline: none;
+  border-bottom-color: #ff6600;
+}
+.formulario-contacto textarea {
+  height: 150px;
+}
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-bottom-color: #ff6600;
+}
+.formulario-contacto .boton-enviar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.formulario-contacto .boton-reset {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #ccc;
+}
+.formulario-contacto .boton-enviar:hover, .formulario-contacto .boton-reset:hover {
+  background-color: #ff4500;
+}
+
+/* Estilos para los campos del formulario */
+/* Estilos para los botones */
+/* PAGINAS PRODUCTOS */
+/* grid */
+.gridFlexx {
+  width: 100%;
+}
+
+.seccionFotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.seccionFotosb {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 20px 10px;
+}
+
+.imagenCamiseta {
+  width: 100%;
+}
+
+.seccionImagen {
+  margin: 10px 30px;
+}
+
+/* section precio */
+.seccionPrecio {
+  width: 100%;
+  padding: 0px 50px;
+  margin-top: 40px;
+}
+.seccionPrecio h1 {
+  font-size: 0.8em;
+  color: #616060;
+  margin: 0px 0px 0px 0px;
+}
+.seccionPrecio p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000000;
+  margin: 20px 0px 0px 0px;
+}
+.seccionPrecio .cop {
+  margin-top: 50px;
+  color: #000000;
+}
+
+.tallas {
+  margin: 30px 0px;
+}
+.tallas p {
+  display: inline;
+  color: rgb(69, 72, 72);
+  border: 1px rgb(193, 191, 191) solid;
+  padding: 10px 14px;
+  margin: 0px 20px 0px 0px;
+  cursor: pointer;
+}
+.tallas p:hover {
+  background-color: #c8c1c1;
+}
+
+.padreDisponibilidad {
+  display: flex;
+  flex-direction: row;
+}
+.padreDisponibilidad h1 {
+  margin-top: 60px;
+  margin-left: 10px;
+  padding: 0px 5px 0px 0px;
+  border-right: 1px solid #000000;
+}
+
+/* button cesta */
+.buttonComprar {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.buttonComprar .btnCesta {
+  background-color: rgb(66, 238, 172);
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 5px;
+  color: #fafafa;
+  font-size: 20px;
+  width: 70%;
+}
+.buttonComprar .btnCesta:hover {
+  background: steelblue;
+}
+
+/* pagina m1 */
+/* te puede interesar */
+.like {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+/* responsive-media queries para pantallas de 768px hasta 1023px */
+/* Vista tablet */
+/* index */
+@media (max-width: 1023px) {
+  .gridFlexx {
+    justify-content: center;
+  }
+  .seccionFotos {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .seccionPrecio {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .padreDisponibilidad {
+    justify-content: center;
+  }
+  /* section A */
+  .sectionA p {
+    font-size: 1rem;
+  }
+  .sectionA h2 {
+    font-size: 1.2rem;
+  }
+  .gridOutfit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .gridOutfit p {
+    font-size: 0.8rem;
+  }
+  /* section C */
+  .sectionC h1 {
+    font-size: 2rem;
+  }
+  .sectionC p {
+    font-size: 1rem;
+  }
+  .inputC {
+    width: 300px;
+  }
+  .buttonC {
+    width: 300px;
+  }
+  /* sectionE */
+  .sectionE {
+    height: auto;
+  }
+  .sectionE h2 {
+    font-size: 1.7rem;
+  }
+  .sectionE p {
+    font-size: 0.6rem;
+  }
+  /* Section D */
+  .gridTop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gridTop p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  .sectionD .pe {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  /* section B */
+  .sectionB {
+    height: auto;
+  }
+  .sectionB h2 {
+    font-size: 1.7rem;
+  }
+  .sectionB p {
+    font-size: 0.8rem;
+    color: #000000;
+    background: #fafafa;
+  }
+  /* tienda pag */
+  .gridPadre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* footer tablets */
+  .categoriasFooter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .ayudaFooter {
+    margin: 10px 0px;
+  }
+  .ayudaFooter h4 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .parrafoFooter {
+    color: rgb(47, 49, 49);
+    font-size: 13px;
+    text-align: center;
+  }
+  .mediosDePago {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contactoWpp {
+    text-align: center;
+  }
+  /* footer final */
+  .dir {
+    padding: 10px 5px;
+  }
+  .dir p {
+    color: #fafafa;
+    font-size: 1rem;
+  }
+  /* pagina de comprar prendas */
+  .buttonComprar {
+    align-items: center;
+  }
+  .buttonComprar .btnCesta {
+    width: 50%;
+  }
+}
+@media (max-width: 850px) {
+  .seccionFotos {
+    display: grid;
+    grid-template-columns: 1fr fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* Ajustes especificos para version mobile */
+/* 0 hasta 768px */
+@media (max-width: 650px) {
+  /* INDEX */
+  /* section A */
+  .sectionA p {
+    font-size: 0.8rem;
+  }
+  .sectionA h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .gridOutfit p {
+    font-size: 0.7rem;
+  }
+  /* sectionE */
+  .sectionE {
+    height: auto;
+  }
+  .sectionE h2 {
+    font-size: 1.5rem;
+  }
+  .sectionE p {
+    font-size: 0.5rem;
+  }
+  /* Section D */
+  .gridTop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gridTop p {
+    font-size: 0.7rem;
+  }
+  .sectionD .pe {
+    font-size: 1.4rem;
+  }
+  /* section B */
+  .sectionB {
+    height: auto;
+  }
+  .sectionB h2 {
+    font-size: 1.4rem;
+    color: #fafafa;
+  }
+  .sectionB p {
+    font-size: 0.5rem;
+  }
+  /* section C */
+  .sectionC h1 {
+    font-size: 1.6rem;
+  }
+  .sectionC p {
+    font-size: 1rem;
+  }
+  .inputC {
+    width: 250px;
+  }
+  .buttonC {
+    width: 250px;
+  }
+  /* footer */
+  .categoriasFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .mediosDePago {
+    justify-content: center;
+  }
+  /* footer final */
+  .dir {
+    padding: 5px 10px;
+  }
+  .dir p {
+    color: #fafafa;
+    font-size: 0.8rem;
+  }
+  /* pagina tienda */
+  .gridPadre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+  }
+  /* pagina de comprar prendas */
+  .buttonComprar .btnCesta {
+    width: 70%;
+  }
+}
+@media (max-width: 350px) {
+  .gridPadre {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
