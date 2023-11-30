@@ -9,6 +9,8 @@ html {
 }
 
 /* header 1 */
+
+
 ul{
   list-style: none;
 }
@@ -20,8 +22,10 @@ a{
 .navegation{
   display: flex;
   justify-content: space-between;
-  margin: 0px;
+  align-items: center;
+  margin: 0px 0px;
   border: 2px solid blue;
+  padding: 0px;
 }
 
 .menu{
@@ -29,21 +33,21 @@ a{
   border: #ff4500 solid 2px;
   align-items: center;
   text-align: center;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 0px;
+  padding: 0px;
 }
 .menu li{
-  margin: 0px 10px;
+  margin: 0px 20px;
 }
 
 .navegation p{
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.4em;
   color: #000000;
-  font-weight: bold;
-  margin-right: 300px;
+  font-weight: 900;
+  margin-right: 200px;
   border: 2px solid red;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 /* header */
