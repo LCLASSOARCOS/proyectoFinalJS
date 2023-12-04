@@ -87,6 +87,13 @@ flex-direction: column;
 gap: 1rem;
 }
 
+.titulo-principa-carrito{
+  color: #007bff;
+  text-align: start;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
 /* .contenedor-cards{
   display: flex;
   flex-direction: column;
