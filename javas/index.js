@@ -2,7 +2,7 @@ const productos = [
     { id: 1, nombre: 'Vestido largo manga larga tul print', imagen: '../img/camiseta1.jpg', precio: 70000, categoria: 'Portátiles' },
     { id: 2, nombre: 'Camiseta polo', imagen: '../img/hombre.jpg', precio: 800, categoria: 'Portátiles' },
     { id: 3, nombre: 'Smartwatch', imagen: '../img/camiseta1.jpg', precio: 200, categoria: 'Portátiles' },
-    { id: 4, nombre: 'Micrófono BT', imagen: '../img/camiseta1.jpg', precio: 50, categoria: 'Audio' },
+    { id: 4, nombre: 'Micrófono BT', imagen: '../Img/camiseta1.jpg', precio: 50, categoria: 'Audio' },
     { id: 5, nombre: 'Bafles WiFi', imagen: '../img/camiseta1.jpg', precio: 80, categoria: 'Audio' },
     { id: 6, nombre: 'Auriculares BT', imagen: '../img/camiseta1.jpg', precio: 60, categoria: 'Audio' },
     { id: 7, nombre: 'Smart TV', imagen: '../img/camiseta1.jpg', precio: 600, categoria: 'Televisores' },
