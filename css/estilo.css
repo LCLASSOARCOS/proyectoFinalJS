@@ -141,6 +141,53 @@ gap: 1rem;
   border: none;
 }
 
+/* carrito botones vaciar y comprar */
+
+.caja-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 80px;
+}
+.caja-precio{
+  display: flex;
+  align-items: center;
+}
+.caja-comprar-derecha{
+  display: flex;
+  align-items: center;
+  border: 0;
+  background-color: #c8c1c1;
+  padding: 0.5rem;
+  border-radius: 1rem ;
+  color: #0c0c0c;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.boton-vaciar-izquierda button{
+  border: 0;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #f0e6e6;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.boton-comprar-derecha{
+  border: 0;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #f0e6e6;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.caja-vaciar-derecha{
+
+}
+
 /* header */
 /* a{
   text-decoration: none;
