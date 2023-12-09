@@ -36,6 +36,12 @@
    <script src="https://kit.fontawesome.com/92f21f5232.js" crossorigin="anonymous"></script>
 
    <!-- Favicon -->
+
+   <!-- js -->
+
+   <script src="javas/products.js"></script>
+   <script src="javas/index.js" defer></script>
+   <script src="javas/cart.js" defer></script>
 </head>
 
 <body>
@@ -67,7 +73,7 @@
       <nav class="navegation">
 
          <ul class="menu">
-            <li> <a href="html/camisetas_hombre.html">HOMBRE</a></li>
+            <li> <a id="hombres" href="html/camisetas_hombre.html">HOMBRE</a></li>
             <li> <a href="html/camisetas_mujer.html">MUJER</a></li>
             <li> <a href="html/tienda.html">Sale</a></li>
          </ul>
@@ -77,7 +83,9 @@
          </a>
 
          <div class="carrito-menu">
-                <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>           
+                <a href="carrito.html">
+                  <i class="fa-solid fa-cart-shopping"></i><span id="numerito" class="numerito">0</span>
+               </a>           
          </div>
 
       </nav>

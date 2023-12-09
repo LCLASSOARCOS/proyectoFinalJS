@@ -27,61 +27,46 @@
   <link rel="stylesheet" href="../css/estilo.css">
   
   <!-- Javascript  -->
+  <script src="../javas/products.js"></script>
   <script defer src="../javas/index.js"></script>
+  <script src="javas/cart.js" defer></script>
+
+  <!-- libreria -->
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+  <!-- iconos -->
+
+  <script src="https://kit.fontawesome.com/92f21f5232.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <header>
-    <!-- navegador -->
-    <!-- navegador -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active ilass" aria-current="page" href="../index.html">iLASS</a>
-            </li>
-            <li class="nav-item">
-              <a style="color:black" class="nav-link" href="tienda.html">Tienda</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                style="color:black">
-                Hombre
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" style="color:red" href="promos.html">Promo Hasta -50%</a></li>
-                <li><a class="dropdown-item" href="camisetas_hombre.html">Camisetas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                style="color:black">
-                Mujer
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" style="color:red" href="promos.html">Promo Hasta -50%</a></li>
-                <li><a class="dropdown-item" href="camisetas_mujer.html">Camisetas</a></li>
-              </ul>
-            </li>
-            <li><a style="color:black" class="nav-link"
-              href="form.html">Contacto</a></li>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
 
-  </header>
+
+   <header>
+
+      <nav class="navegation">
+
+         <ul class="menu">
+            <li> <a id="hombres" href="camisetas_hombre.html">HOMBRE</a></li>
+            <li> <a href="camisetas_mujer.html">MUJER</a></li>
+            <li> <a href="tienda.html">Sale</a></li>
+         </ul>
+
+         <a href="../index.html">
+            <p>iLASS</p>
+         </a>
+
+         <div class="carrito-menu">
+                <a href="../carrito.html"><i class="fa-solid fa-cart-shopping"></i><span id="numerito" class="numerito">0</span></a>           
+         </div>
+
+      </nav>
+
+   </header>
 
 <!-- MAIN -->
 

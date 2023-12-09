@@ -1,3 +1,4 @@
+
 html {
   font-family: "roboto", "Montserrat", sans-serif;
 }
@@ -8,7 +9,13 @@ html {
 
 }
 
+
+
 /* header 1 */
+
+header{
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.104);
+}
 
 ul{
   list-style: none;
@@ -72,7 +79,7 @@ a{
 }
 
 .carrito-menu a:hover{
-  color: rgb(46, 49, 202);
+  color: rgb(197, 37, 37);
 }
 
 /* carrito pagina */
@@ -92,6 +99,15 @@ gap: 1rem;
   text-align: start;
   margin-top: 40px;
   margin-left: 80px;
+}
+
+.numerito{
+  background-color: #cb1616;
+color: #ffffff;
+font-size: 1rem;
+border-radius: 30%;
+padding: 1px 3px;
+margin-left: 10px;
 }
 
 /* .contenedor-cards{
@@ -139,7 +155,7 @@ gap: 1rem;
 .boton-eliminar{
   color: brown;
   border: none;
-}
+  background-color: transparent;}
 
 /* carrito botones vaciar y comprar */
 
@@ -177,7 +193,7 @@ gap: 1rem;
 
 .boton-comprar-derecha{
   border: 0;
-  background-color: cornflowerblue;
+  background-color: rgb(11, 63, 160);
   padding: 1rem;
   border-radius: 1rem;
   color: #f0e6e6;
@@ -186,6 +202,24 @@ gap: 1rem;
 }
 .caja-vaciar-derecha{
 
+}
+
+/* carrito vacio y comprar */
+
+.carrito-vacio,
+.carrito-comprado{
+  color: #ed0707;
+  font-size: 1.5rem;
+  margin: 10px 80px;
+  /* display: none; */
+}
+
+.carrito-comprado i{
+  font-size: 1.5rem;
+}
+
+.ocultar {
+  display: none;
 }
 
 /* header */

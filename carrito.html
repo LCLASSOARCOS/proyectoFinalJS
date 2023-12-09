@@ -31,11 +31,18 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- iconos -->
+ <!-- iconos -->
 
-    <script src="https://kit.fontawesome.com/92f21f5232.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/92f21f5232.js" crossorigin="anonymous"></script>
 
-    <!-- Favicon -->
+
+    <!-- Javascript  -->
+  <script src="../javas/products.js"></script>
+  <script defer src="../javas/index.js"></script>
+  <script src="javas/cart.js" defer></script>
+
+    
+
 </head>
 
 <body>
@@ -88,9 +95,9 @@
 
         <h2 class="titulo-principa-carrito">Carrito</h2>
 
+        <p class="carrito-vacio">Tu carrito esta vacio</p>
 
-        <div class="section-resumen">
-
+        <div class="section-resumen ocultar">
             <div class="div-imagen">
                 <img class="imagen-carrito" src="Img/camiseta1.jpg" alt="">
             </div>
@@ -115,32 +122,7 @@
             </button>
         </div>
 
-        <div class="section-resumen">
-            <div class="div-imagen">
-                <img class="imagen-carrito" src="Img/camiseta1.jpg" alt="">
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">titulo</p>
-                <h3 class="titulo-divv">Camiseta Polo Roja</h3>
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">Cantidad</p>
-                <h3 class="titulo-div">1</h3>
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">Precio</p>
-                <h3 class="titulo-div">$100.000</h3>
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">Subtotal</p>
-                <h3 class="titulo-div">$100.000</h3>
-            </div>
-            <button class="boton-eliminar">
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        </div>
-
-        <div class="caja-total">
+        <div class="caja-total ocultar">
             <div class="boton-vaciar-izquierda">
                 <button>Vaciar Carrito</button>
             </div>
@@ -152,6 +134,8 @@
                 <button class="boton-comprar-derecha">Comprar Ahora</button>
             </div>
         </div>
+
+        <p class="carrito-comprado ocultar">Muchas gracias por tu compra <i class="fa-regular fa-face-smile"></i></p>
 
     </main>
 

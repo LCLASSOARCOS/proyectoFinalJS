@@ -1,48 +1,75 @@
-const productos = [
-    { id: 1, nombre: 'Vestido largo manga larga tul print', imagen: '../img/camiseta1.jpg', precio: 70000, categoria: 'Portátiles' },
-    { id: 2, nombre: 'Camiseta polo', imagen: '../Img/camiseta1.jpg', precio: 800, categoria: 'Portátiles' },
-    { id: 3, nombre: 'Smartwatch', imagen: '../Img/camiseta1.jpg', precio: 200, categoria: 'Portátiles' },
-    { id: 4, nombre: 'Micrófono BT', imagen: '../Img/camiseta1.jpg', precio: 50, categoria: 'Audio' },
-    { id: 5, nombre: 'Bafles WiFi', imagen: '../Img/camiseta1.jpg', precio: 80, categoria: 'Audio' },
-    { id: 6, nombre: 'Auriculares BT', imagen: '../Img/camiseta1.jpg', precio: 60, categoria: 'Audio' },
-    { id: 7, nombre: 'Smart TV', imagen: '../Img/camiseta1.jpg', precio: 600, categoria: 'Televisores' },
-    { id: 8, nombre: 'Smart-Cam', imagen: '../Img/camiseta1.jpg', precio: 400, categoria: 'Video' },
-    { id: 9, nombre: 'All In One', imagen: '../Img/camiseta1.jpg', precio: 900, categoria: 'Desktop' },
-    { id: 10, nombre: 'Play Estéishon', imagen: '../Img/camiseta1.jpg', precio: 300, categoria: 'Videojuegos' },
-    { id: 11, nombre: 'Notebook gamer', imagen: '../img/camiseta1.jpg', precio: 1000, categoria: 'Portátiles' },
-    { id: 12, nombre: 'iPhone 14', imagen: '../img/camiseta1.jpg', precio: 800, categoria: 'Portátiles' },
-    { id: 13, nombre: 'Apple watch', imagen: '../img/camiseta1.jpg', precio: 200, categoria: 'Portátiles' },
-    { id: 14, nombre: 'Micrófono', imagen: '../img/camiseta1.jpg', precio: 50, categoria: 'Audio' },
-    { id: 15, nombre: 'Bafles potenciados', imagen: '../img/camiseta1.jpg', precio: 80, categoria: 'Audio' },
-    { id: 16, nombre: 'Auriculares', imagen: '../img/camiseta1.jpg', precio: 60, categoria: 'Audio' },
-    { id: 17, nombre: 'Google TV', imagen: '../img/camiseta1.jpg', precio: 600, categoria: 'Televisores' },
-    { id: 18, nombre: 'Cámara fotográfica', imagen: '../img/camiseta1.jpg', precio: 400, categoria: 'Video' },
-    { id: 19, nombre: 'Monitor 32', imagen: '../img/camiseta1.jpg', precio: 900, categoria: 'Desktop' },
-    
-]
+// libreria
 
+function mostrarAlerta() {
+    Swal.fire({
+      title: '¡Producto agregado!',
+      text: 'Has agregado un producto al carrito',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
+  }
+
+
+const Carrito = [];
 
 const contenedor = document.querySelector('.gridPadre');
-
-function crearCardHTML(producto) {
-    return `
-        <div class="productoCasillas">
-            <img class="productoImagen" src="${producto.imagen}" alt="${producto.nombre}">
-            <p class="productoParrafo">${producto.nombre}</p>
-            <h2 class="productoPrecio">$${producto.precio}</h2>
-            <button class="productoComprar" onclick='agregarAlCarrito(${producto.id})'>Comprar</button>
-        </div>`;
-}
+const numerito = document.querySelector('#numerito')
 
 function cargarProductos() {
-    if (productos.length > 0) {
-        contenedor.innerHTML = productos.map(crearCardHTML).join('');
-    }
+
+    productos.forEach(producto => {
+        const div = document.createElement('div')
+        div.classList.add('productoCasillas')
+        div.innerHTML = 
+        `
+        <div class="productoCasillas">
+        <img class="productoImagen" src="${producto.imagen}" alt="${producto.nombre}">
+        <p class="productoParrafo">${producto.nombre}</p>
+        <h2 class="productoPrecio">$${producto.precio}</h2>
+        <button class="productoComprar" id='${producto.id}'>Agregar</button>
+        </div>`;
+
+        contenedor.append(div)
+    })
 }
 
-document.addEventListener('DOMContentLoaded', cargarProductos);
+cargarProductos();
 
-function agregarAlCarrito(productoId) {
-    // Implementa la lógica para agregar al carrito según el productoId
-    console.log(`Añadido al carrito: ${productoId}`);
+let botonesAgregar = document.querySelectorAll('.productoComprar')
+botonesAgregar.forEach(boton => {
+    boton.addEventListener('click', agregarAlCarro)
+})
+
+// function actualizarBotonesAgregar(){
+//     botonesAgregar = document.querySelectorAll('productoComprar')
+//     botonesAgregar.forEach(boton => {
+//         boton.addEventListener('click', agregarAlCarrito)
+//     })
+// }
+
+function agregarAlCarro(e){
+    const idBoton = e.currentTarget.id
+    const idProducto = parseInt(idBoton, 10);
+    const productoCargado = productos.find(producto => producto.id === idProducto)
+       // Verificar si el producto ya está en el carrito
+       const productoEnCarrito = Carrito.find(item => item.id === productoCargado.id);
+
+       if (productoEnCarrito) {
+           // Si el producto ya está en el carrito, incrementar la cantidad
+           productoEnCarrito.cantidad++;
+       } else {
+           // Si el producto no está en el carrito, agregarlo con cantidad 1
+           productoCargado.cantidad = 1;
+           Carrito.push(productoCargado);
+       }
+   
+       contarNumerito()
+
+       localStorage.setItem
+}
+
+function contarNumerito(){
+    let sumaNumerito = Carrito.reduce((acc,producto) => acc + producto.cantidad, 0)
+    numerito.innerText= sumaNumerito
+    mostrarAlerta()
 }
