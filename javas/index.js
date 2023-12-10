@@ -15,6 +15,7 @@ const Carrito = [];
 const contenedor = document.querySelector('.gridPadre');
 const numerito = document.querySelector('#numerito')
 
+
 function cargarProductos() {
 
     productos.forEach(producto => {
@@ -65,7 +66,7 @@ function agregarAlCarro(e){
    
        contarNumerito()
 
-       localStorage.setItem
+       localStorage.setItem('carrito-productos', JSON.stringify(Carrito))
 }
 
 function contarNumerito(){

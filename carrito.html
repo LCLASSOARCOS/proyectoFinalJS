@@ -31,17 +31,9 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <!-- iconos -->
+    <!-- iconos -->
 
- <script src="https://kit.fontawesome.com/92f21f5232.js" crossorigin="anonymous"></script>
-
-
-    <!-- Javascript  -->
-  <script src="../javas/products.js"></script>
-  <script defer src="../javas/index.js"></script>
-  <script src="javas/cart.js" defer></script>
-
-    
+    <script src="https://kit.fontawesome.com/92f21f5232.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -84,59 +76,63 @@
             </a>
 
             <div class="carrito-menu">
-                <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i><span id="numerito"
+                        class="numerito">0</span></a>
             </div>
 
         </nav>
 
     </header>
 
-    <main class="container-carrito">
+    <main>
 
-        <h2 class="titulo-principa-carrito">Carrito</h2>
+        <h2 class="titulo-principal">Carrito</h2>
+        <div id="contenedor-completo-carrito" class="contenedor-completo-carrito">
 
-        <p class="carrito-vacio">Tu carrito esta vacio</p>
+            <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio</p>
 
-        <div class="section-resumen ocultar">
-            <div class="div-imagen">
-                <img class="imagen-carrito" src="Img/camiseta1.jpg" alt="">
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">titulo</p>
-                <h3 class="titulo-divv">Camiseta Polo Roja</h3>
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">Cantidad</p>
-                <h3 class="titulo-div">1</h3>
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">Precio</p>
-                <h3 class="titulo-div">$100.000</h3>
-            </div>
-            <div class="div-datos">
-                <p class="parrafo-div">Subtotal</p>
-                <h3 class="titulo-div">$100.000</h3>
-            </div>
-            <button class="boton-eliminar">
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        </div>
-
-        <div class="caja-total ocultar">
-            <div class="boton-vaciar-izquierda">
-                <button>Vaciar Carrito</button>
-            </div>
-            <div class="caja-precio">
-                <div class="caja-comprar-derecha">
-                    <p>Total</p>
-                    <p>$1000</p>
+            <div id="section-resumen" class="section-resumen ocultar">
+                <div class="div-imagen">
+                    <img class="imagen-carrito" src="Img/camiseta1.jpg" alt="">
                 </div>
-                <button class="boton-comprar-derecha">Comprar Ahora</button>
+                <div class="div-datos">
+                    <p class="parrafo-div">titulo</p>
+                    <h3 class="titulo-divv">Camiseta Polo Roja</h3>
+                </div>
+                <div class="div-datos">
+                    <p class="parrafo-div">Cantidad</p>
+                    <h3 class="titulo-div">1</h3>
+                </div>
+                <div class="div-datos">
+                    <p class="parrafo-div">Precio</p>
+                    <h3 class="titulo-div">$100.000</h3>
+                </div>
+                <div class="div-datos">
+                    <p class="parrafo-div">Subtotal</p>
+                    <h3 class="titulo-div">$100.000</h3>
+                </div>
+                <button class="boton-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
             </div>
+
+            <div id="caja-total" class="caja-total ocultar">
+                <div class="boton-vaciar-izquierda">
+                    <button>Vaciar Carrito</button>
+                </div>
+                <div class="caja-precio">
+                    <div class="caja-comprar-derecha">
+                        <p>Total</p>
+                        <p>$1000</p>
+                    </div>
+                    <button class="boton-comprar-derecha">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <p id="carrito-comprado" class="carrito-comprado ocultar">Muchas gracias por tu compra <i
+                    class="fa-regular fa-face-smile"></i></p>
+
         </div>
-
-        <p class="carrito-comprado ocultar">Muchas gracias por tu compra <i class="fa-regular fa-face-smile"></i></p>
-
     </main>
 
 
@@ -205,6 +201,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <!-- Javascript  -->
+    <script src="javas/cart.js" defer></script>
+    <script src="javas/index.js" defer></script>
 </body>
 
 </html>
