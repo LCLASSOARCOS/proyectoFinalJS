@@ -15,5 +15,4 @@ const productos = [
     { id: 15, nombre: 'Camiseta Metallica Offsire', imagen: '../Img//productos/camisetas/camiseta1.jpg', precio: 80000, categoria: 'Audio' },
     { id: 16, nombre: 'Camiseta Metallica Offsire', imagen: '../Img//productos/camisetas/camiseta2.jpg', precio: 80000, categoria: 'Audio' },
     { id: 17, nombre: 'Camiseta Metallica Offsire', imagen: '../Img//productos/camisetas/camiseta33.jpg', precio: 80000, categoria: 'Audio' },
-    
 ]
