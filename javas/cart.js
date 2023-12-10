@@ -1,22 +1,25 @@
 const productoEnCarrito = JSON.parse(localStorage.getItem('carrito-productos'))
 
+// const contenedorCompleto = document.querySelector('#contenedor-completo-carrito')
 const contenedorCarritoVacio = document.querySelector('#carrito-vacio')
-const contenedorProducto = document.querySelector('#section-resumen')
+const contenedorProducto = document.querySelector('#contenedor-cajas')
 const contenedorTotal = document.querySelector('#caja-total')
 const contenedorCarritoComprado = document.querySelector('#carrito-comprado')
 
 if (productoEnCarrito) {
+
     contenedorCarritoVacio.classList.add('ocultar')
     contenedorProducto.classList.remove('ocultar')
     contenedorTotal.classList.remove('ocultar')
     contenedorCarritoComprado.classList.add('ocultar')
 
-    // let div;
+
+    contenedorProducto.innerHTML=''
 
     productoEnCarrito.forEach(producto => {
 
-        const div = contenedorProducto
-        div.classList.add('#section-resumen')
+        const div = document.createElement('div')
+        div.classList.add('caja-producto-comprado')
         div.innerHTML =
             `<div class="div-imagen">
                     <img class="imagen-carrito" src="${producto.imagen}" alt="${producto.nombre}">

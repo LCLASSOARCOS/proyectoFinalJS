@@ -9,8 +9,15 @@ function mostrarAlerta() {
     });
   }
 
+let Carrito;
 
-const Carrito = [];
+const productoEnCarritoLS = JSON.parse(localStorage.getItem('carrito-productos'))
+if(productoEnCarritoLS){
+    Carrito = productoEnCarritoLS
+    
+} else {
+    Carrito= []
+}
 
 const contenedor = document.querySelector('.gridPadre');
 const numerito = document.querySelector('#numerito')
