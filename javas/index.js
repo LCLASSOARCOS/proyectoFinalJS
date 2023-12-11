@@ -9,14 +9,22 @@ function mostrarAlerta() {
     });
   }
 
+  function alertaCompra() {
+    Swal.fire({
+      title: '¡Compra Realizada!',
+      text: 'Te enviaremos los productos',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
+  }
+
 let Carrito;
 
 const productoEnCarritoLS = JSON.parse(localStorage.getItem('carrito-productos'))
 if(productoEnCarritoLS){
-    Carrito = productoEnCarritoLS
-    
+    Carrito= productoEnCarritoLS
 } else {
-    Carrito= []
+    Carrito = []
 }
 
 const contenedor = document.querySelector('.gridPadre');
