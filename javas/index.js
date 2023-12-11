@@ -1,3 +1,12 @@
+let productos= []
+
+fetch("../javas/productos.json")
+    .then(response => response.json())
+    .then(data=> {
+        productos = data 
+        cargarProductos()
+    })
+
 // libreria
 
 function mostrarAlerta() {
@@ -47,14 +56,14 @@ function cargarProductos() {
 
         contenedor.append(div)
     })
+    let botonesAgregar = document.querySelectorAll('.productoComprar')
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener('click', agregarAlCarro)
+    })
 }
 
-cargarProductos();
 
-let botonesAgregar = document.querySelectorAll('.productoComprar')
-botonesAgregar.forEach(boton => {
-    boton.addEventListener('click', agregarAlCarro)
-})
+
 
 // function actualizarBotonesAgregar(){
 //     botonesAgregar = document.querySelectorAll('productoComprar')
@@ -80,6 +89,7 @@ function agregarAlCarro(e){
        }
    
        contarNumerito()
+       mostrarAlerta()
 
        localStorage.setItem('carrito-productos', JSON.stringify(Carrito))
 }
@@ -87,5 +97,5 @@ function agregarAlCarro(e){
 function contarNumerito(){
     let sumaNumerito = Carrito.reduce((acc,producto) => acc + producto.cantidad, 0)
     numerito.innerText= sumaNumerito
-    mostrarAlerta()
 }
+
