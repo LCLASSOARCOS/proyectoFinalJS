@@ -85,6 +85,26 @@ function actualizarBotonesEliminar() {
 }
 
 function eliminarDelCarrito(e) {
+    Toastify({
+        text: "Producto eliminado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, steelblue, #32528e)",
+          borderRadius: '2rem',
+          textTransform: 'uppercase',
+          fontSize: '.75rem'
+        },
+        offset: {
+            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '2.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     // Seleccionar el id
     const idBoton = e.currentTarget.dataset.id;
     // Proceso para convertir el string en número
