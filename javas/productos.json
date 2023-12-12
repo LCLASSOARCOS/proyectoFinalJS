@@ -2,7 +2,7 @@
     {
       "id": 1,
       "nombre": "Vestido largo manga larga tul print",
-      "imagen": "./Img//varios/vestido2.webp",
+      "imagen": "../Img//varios/vestido2.webp",
       "precio": 219000,
       "categoria": "Vestidos"
     },
