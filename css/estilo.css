@@ -107,19 +107,14 @@ padding: 1px 3px;
 margin-left: 10px;
 }
 
-/* .contenedor-cards{
-  display: flex;
-  flex-direction: column;
-} */
-
-
+/* Carrito seccion productos */
 
 .contenedor-cajas{
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content:start;
   align-items: start;
-  width: auto;
+  width: 90%;
   margin-top: 100px;
   margin: 20px 50px;
   background-color: transparent;
@@ -141,32 +136,46 @@ margin-left: 10px;
   border-radius: 20px;
 }
 
-/* .div-datos h3{
-  font-size: 1.2em;
-  border: 2px solid blue;
-} */
-
-.div-datos h3{
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-top: 0px;
-} 
-
-.div-datos .titulo-divv{
-  font-size: 1.5em;
-  margin-top: 0px;
-}
-
-
 .imagen-carrito {
   width: 100px;
   border-radius: 1rem;
 }
 
+.div-datos-nombre{
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-datos-nombre p{
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+  color: #000000;
+}
+
+.div-datos-nombre h3{
+  margin: 0px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
 .div-datos{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+.div-datos h3{
+  font-size: 1.1em;
+  margin: 0px;
+  font-weight: bold;
+} 
+
+.div-datos p{
   margin: 0px;
 }
 
@@ -200,15 +209,6 @@ margin-left: 10px;
   color: #0c0c0c;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-.caja-comprar-derecha:hover{
-  color: #000000;
-  background-color: #b3b4b7;
-}
-
-.caja-comprar-derecha p{
-  margin: 0px;
 }
 
 .caja-total .boton-vaciar-izquierda{

@@ -24,7 +24,7 @@
       "id": 4,
       "nombre": "Riñonera rígida",
       "imagen": "../Img//varios/rinonera1.jpg",
-      "precio": 50,
+      "precio": 150000,
       "categoria": "Audio"
     },
     {
@@ -80,35 +80,35 @@
       "id": 13,
       "nombre": "Riñonera rígida",
       "imagen": "../Img//varios/rinonera1.jpg",
-      "precio": 50,
+      "precio": 150000,
       "categoria": "Audio"
     },
     {
       "id": 14,
       "nombre": "Camiseta Metallica Offsire",
       "imagen": "../Img//productos/camisetas/camiseta55555.jpg",
-      "precio": 80000,
+      "precio": 129000,
       "categoria": "Audio"
     },
     {
       "id": 15,
       "nombre": "Camiseta Metallica Offsire",
       "imagen": "../Img//productos/camisetas/camiseta1.jpg",
-      "precio": 80000,
+      "precio": 690000,
       "categoria": "Audio"
     },
     {
       "id": 16,
       "nombre": "Camiseta Metallica Offsire",
       "imagen": "../Img//productos/camisetas/camiseta2.jpg",
-      "precio": 80000,
+      "precio": 109000,
       "categoria": "Audio"
     },
     {
       "id": 17,
       "nombre": "Camiseta Metallica Offsire",
       "imagen": "../Img//productos/camisetas/camiseta33.jpg",
-      "precio": 80000,
+      "precio": 129000,
       "categoria": "Audio"
     }
   ]
