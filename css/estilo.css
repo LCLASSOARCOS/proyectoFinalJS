@@ -10,7 +10,6 @@ html {
 }
 
 
-
 /* header 1 */
 
 header{
@@ -187,10 +186,13 @@ margin-left: 10px;
 .caja-precio{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .caja-comprar-derecha{
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   border: 0;
   background-color: #c8c1c1;
   padding: 0.5rem;
@@ -200,24 +202,44 @@ margin-left: 10px;
   cursor: pointer;
 }
 
+.caja-comprar-derecha:hover{
+  color: #000000;
+  background-color: #b3b4b7;
+}
+
+.caja-comprar-derecha p{
+  margin: 0px;
+}
+
 .caja-total .boton-vaciar-izquierda{
   border: 0;
   background-color: cornflowerblue;
-  padding: 1rem;
+  padding: .4rem;
   border-radius: 1rem;
-  color: #ffffff;
+  color: #fcfbfb;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+
+.boton-vaciar-izquierda:hover{
+  color: #000000;
+  background: #32528e;
 }
 
 .boton-comprar-derecha{
   border: 0;
   background-color: cornflowerblue;
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 1rem;
   color: #fcfbfb;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.boton-comprar-derecha:hover{
+  color: #000000;
+  background: #32528e;
 }
 .caja-vaciar-derecha{
 
@@ -819,6 +841,7 @@ header .carrito .btn-carrito{
 }
 .buttonComprar .btnCesta:hover {
   background: steelblue;
+  background: #32528e;
 }
 
 /* pagina m1 */
