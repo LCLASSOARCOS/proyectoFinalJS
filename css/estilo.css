@@ -187,65 +187,77 @@ margin-left: 10px;
 /* carrito botones vaciar y comprar */
 
 .caja-total{
-    display: flex;
-    justify-content: space-around;
-    gap: 400px;
-    margin: 20px 80px;
+  display: flex;
+  justify-content: space-around;
+  gap: 400px;
+  margin: 20px 80px;
 }
 .caja-precio{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .caja-comprar-derecha{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: 0;
-  background-color: #c8c1c1;
-  padding: 0.5rem;
-  border-radius: 1rem ;
-  color: #0c0c0c;
-  text-transform: uppercase;
-  cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+border: 0;
+background-color: #c8c1c1;
+padding: 0.5rem;
+border-radius: 1rem ;
+color: #0c0c0c;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+.caja-comprar-derecha:hover{
+color: #000000;
+background-color: #b3b4b7;
+}
+
+.caja-comprar-derecha p{
+margin: 0px;
+color: #cb1616;
+font-weight: bold;
 }
 
 .caja-total .boton-vaciar-izquierda{
-  border: 0;
-  background-color: cornflowerblue;
-  padding: .4rem;
-  border-radius: 1rem;
-  color: #fcfbfb;
-  text-transform: uppercase;
-  cursor: pointer;
+border: 0;
+background-color: cornflowerblue;
+padding: .4rem;
+border-radius: 1rem;
+color: #fcfbfb;
+text-transform: uppercase;
+cursor: pointer;
 }
 
 
 .boton-vaciar-izquierda:hover{
-  color: #000000;
-  background: #32528e;
+color: #f0f0f0;
+background: #32528e;
 }
 
 .boton-comprar-derecha{
-  border: 0;
-  background-color: cornflowerblue;
-  padding: .5rem;
-  border-radius: 1rem;
-  color: #fcfbfb;
-  text-transform: uppercase;
-  cursor: pointer;
+border: 0;
+background-color: cornflowerblue;
+padding: .5rem;
+border-radius: 1rem;
+color: #fcfbfb;
+text-transform: uppercase;
+cursor: pointer;
 }
 
 .boton-comprar-derecha:hover{
-  color: #000000;
-  background: #32528e;
+color: #f0ecec;
+background: #32528e;
 }
 .caja-vaciar-derecha{
 
 }
 
-/* carrito vacio y comprar */
+
+/* carrito vacio y comprado */
 
 .carrito-vacio,
 .carrito-comprado{
